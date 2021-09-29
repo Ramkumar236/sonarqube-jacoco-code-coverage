@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone sources') {
             steps {
-                git branch: 'bad-code', url: 'https://github.com/Ramkumar236/sonarqube-jacoco-code-coverage.git'
+                git url: 'https://github.com/Ramkumar236/sonarqube-jacoco-code-coverage.git'
             }
         }
         stage('SonarQube analysis') {
